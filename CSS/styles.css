@@ -1,0 +1,237 @@
+/* Paleta de colores */
+/* Importando modulos */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap");
+.header-incio {
+  height: 100vh;
+  background-color: aqua;
+  background-image: url(../assets/imagenes/header_inicio.jpg);
+  background-position: center -100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+  .header-incio nav {
+    width: 100%;
+    background-color: rgba(0, 47, 73, 0.173);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+    .header-incio nav .logo img {
+      width: 200px;
+      height: 200px; }
+    .header-incio nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      .header-incio nav ul .cart {
+        width: 25px;
+        height: 25px;
+        color: white; }
+    .header-incio nav li {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px; }
+    .header-incio nav a {
+      text-decoration: none;
+      color: #ffffff; }
+  .header-incio .scroll-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10%;
+    left: 45%; }
+    .header-incio .scroll-button p {
+      color: rgba(255, 255, 255, 0.697);
+      margin-top: 15px;
+      font-size: 1.5rem;
+      cursor: pointer; }
+    .header-incio .scroll-button img {
+      cursor: pointer; }
+
+.main-inicio {
+  margin-top: 40px; }
+  .main-inicio .propuesta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .main-inicio .propuesta h1 {
+      text-align: center;
+      text-decoration: overline 1px;
+      font-size: 36px;
+      margin-bottom: 70px;
+      text-transform: uppercase; }
+    .main-inicio .propuesta .contenedor {
+      border-radius: 4px;
+      box-shadow: 5px 5px 20px #717171;
+      width: 85%;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around; }
+      .main-inicio .propuesta .contenedor .imagen-manos {
+        margin-top: 30px; }
+        .main-inicio .propuesta .contenedor .imagen-manos img {
+          width: 397px;
+          height: 568px;
+          border-radius: 4px;
+          box-shadow: 5px 5px 20px #c1c1c1; }
+      .main-inicio .propuesta .contenedor .texto {
+        background-color: #ffffff;
+        padding: 40px;
+        width: 55%;
+        height: 100%;
+        margin-top: 90px; }
+        .main-inicio .propuesta .contenedor .texto h2 {
+          text-align: left;
+          margin-bottom: 30px;
+          font-size: 32px;
+          position: relative;
+          text-transform: uppercase; }
+        .main-inicio .propuesta .contenedor .texto h2::after {
+          content: "";
+          position: absolute;
+          width: 80%;
+          height: 0.15rem;
+          background-color: #131212;
+          left: 0;
+          bottom: 0;
+          margin-top: 15px; }
+        .main-inicio .propuesta .contenedor .texto p {
+          font-size: 1.2rem;
+          line-height: 40px; }
+  .main-inicio .especialidades {
+    margin-top: 40px; }
+    .main-inicio .especialidades h2 {
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 40px; }
+    .main-inicio .especialidades .card-container {
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap; }
+      .main-inicio .especialidades .card-container .card {
+        height: 533px;
+        width: 378px;
+        background-image: url(../assets/imagenes/flatwhite.jpg);
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        border-radius: 8px; }
+        .main-inicio .especialidades .card-container .card .descripcion {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          padding: 30px;
+          background-color: rgba(253, 240, 213, 0.563);
+          border-radius: 0 0 8px 8px; }
+          .main-inicio .especialidades .card-container .card .descripcion h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem; }
+          .main-inicio .especialidades .card-container .card .descripcion button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #20485bff;
+            border: none;
+            color: #ffffff;
+            text-align: center;
+            font-size: 1rem;
+            padding: 10px;
+            width: 130px;
+            cursor: pointer; }
+      .main-inicio .especialidades .card-container .--coldbrew {
+        background-image: url(../assets/imagenes/cold-brew.jpg); }
+      .main-inicio .especialidades .card-container .--expresso {
+        background-image: url(../assets/imagenes/expresso_imagen.jpg); }
+  .main-inicio .novedades {
+    width: 100%;
+    height: 631px;
+    background-image: url(../assets/imagenes/nuevo-producto.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 40px; }
+
+.footer-inicio {
+  margin-top: 40px;
+  width: 100%;
+  background-color: #fdf0d5ff;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+  .footer-inicio .direccion {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start; }
+    .footer-inicio .direccion h4 {
+      margin: 20px;
+      font-size: 24px; }
+    .footer-inicio .direccion ul {
+      list-style: none; }
+    .footer-inicio .direccion li {
+      font-size: 20px;
+      margin: 20px; }
+  .footer-inicio .redes {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center; }
+    .footer-inicio .redes img {
+      margin-top: 10px;
+      height: 180px;
+      width: 180px; }
+    .footer-inicio .redes h4 {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 24px; }
+    .footer-inicio .redes .redes-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 10px; }
+      .footer-inicio .redes .redes-container img {
+        width: 60px;
+        height: 55px; }
+  .footer-inicio .trabajo {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    .footer-inicio .trabajo h4 {
+      font-size: 24px;
+      margin-bottom: 10px; }
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #003049ff;
+  font-weight: bold; }

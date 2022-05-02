@@ -1,0 +1,37 @@
+
+/* Paleta de colores */
+
+$color1: #780000ff;
+$color2: #c1121fff;
+$color3: #fdf0d5ff;
+$color4: #7f908fff;
+$color5: #20485bff;
+$color6: #003049ff;
+$color7: #669bbcff;
+
+$dark:#000000;
+$light:#ffffff;
+
+/* Importando modulos */
+@import "_inicio.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap');
+
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+h1,h2,h3,h4{
+    font-family: 'Montserrat', sans-serif;
+    color: $color6;
+    font-weight: bold;
+}
+
+
+

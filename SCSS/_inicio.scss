@@ -1,0 +1,342 @@
+
+.header-incio{
+    height: 100vh;
+    background-color: aqua;
+    background-image: url(../assets/imagenes/header_inicio.jpg);
+    background-position: center -100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    nav{
+
+        width: 100%;
+        background-color: rgba(0, 47, 73, 0.173);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .logo{
+            img{
+                width: 200px;
+                height: 200px;
+            }
+        };
+
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .cart{
+                width: 25px;
+                height: 25px;
+                color: white;
+
+              
+            }
+        };
+
+        li{
+            display: inline-block;
+           margin: 20px;
+            padding: 10px;
+        };
+
+        a{
+            text-decoration: none;
+            color: $light;
+        }
+
+        
+    }
+
+    .scroll-button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 10%;
+        left: 45%;
+
+        p{
+            color: rgba(255, 255, 255, 0.697);
+            margin-top: 15px;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        img{
+            cursor: pointer;
+        }
+
+    }
+   
+
+
+}
+
+.main-inicio{
+
+    margin-top: 40px;
+
+    .propuesta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            text-align: center;
+            text-decoration: overline 1px;
+            font-size: 36px;
+            margin-bottom: 70px;
+            text-transform: uppercase;
+        }   
+
+        
+        .contenedor{
+
+            border-radius: 4px;
+            box-shadow: 5px 5px 20px rgb(113, 113, 113);
+            width: 85%;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-around;
+            
+
+            .imagen-manos{
+                
+                margin-top: 30px;
+
+
+                img{
+                    width: 397px;
+                    height: 568px;
+                    border-radius: 4px;
+                    box-shadow: 5px 5px 20px rgb(193, 193, 193);
+                }
+
+                
+
+            }
+
+            .texto{
+                background-color: $light;
+                padding: 40px;
+                width: 55%;
+                height: 100%;
+                margin-top: 90px;
+                h2{
+                    text-align: left;
+                    margin-bottom: 30px;
+                    font-size: 32px;
+                    position: relative;
+                    text-transform: uppercase;
+                    
+                }
+
+                h2::after{
+                    content: "";
+                    position: absolute;
+                    width: 80%;
+                    height: 0.15rem;
+                    background-color: rgb(19, 18, 18);
+                    left: 0;
+                    bottom: 0;
+                    margin-top: 15px;
+
+                }
+                p{
+                    font-size: 1.2rem;
+                    line-height:40px;
+                }
+            }
+        }
+    }
+
+    .especialidades{
+
+        margin-top: 40px;
+
+        h2{
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .card-container{
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .card{
+                height: 533px;
+                width: 378px;
+                background-image: url(../assets/imagenes/flatwhite.jpg);
+                background-position: center center;
+                background-size: cover;
+                position: relative;
+                border-radius: 8px;
+
+                .descripcion{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    padding: 30px;
+                    background-color: rgba(253, 240, 213, 0.563);
+                    border-radius: 0 0 8px 8px;
+
+                    h3{
+                        margin-bottom: 10px;
+                        font-size: 1.5rem;
+                    }
+
+                    button{
+                        display: inline-block;
+                        border-radius: 4px;
+                        background-color: #20485bff;
+                        border: none;
+                        color: $light;
+                        text-align: center;
+                        font-size: 1rem;
+                        padding: 10px;
+                        width: 130px;
+                        cursor: pointer;
+
+                    }
+
+                    
+                }
+
+            }
+
+            .--coldbrew{
+                background-image: url(../assets/imagenes/cold-brew.jpg);
+            }
+
+            .--expresso{
+                background-image: url(../assets/imagenes/expresso_imagen.jpg);
+            }
+
+
+        }
+
+
+
+
+
+}
+
+    .novedades{
+        width: 100%;
+        height: 631px;
+        background-image: url(../assets/imagenes/nuevo-producto.png);
+        background-size: cover;
+        background-position: center;
+        margin-top: 40px;
+    }
+
+
+
+
+}
+
+.footer-inicio{
+    margin-top: 40px;
+    width: 100%;
+    background-color: $color3;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .direccion{
+        height: 100%;
+        width: 33%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: flex-start;
+        h4{
+            margin: 20px;
+            font-size: 24px;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        li{
+            font-size: 20px;
+            margin: 20px;
+        }
+
+    }
+
+    .redes{
+        height: 100%;
+        width: 33%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            margin-top: 10px;
+            height: 180px;
+            width: 180px;
+        }
+        
+        h4{
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+    
+
+        .redes-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 10px;
+
+            img{
+                width: 60px;
+                height: 55px;
+            }
+        }
+        
+    }
+
+    .trabajo{
+        height: 100%;
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        h4{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+
+    }
+}
