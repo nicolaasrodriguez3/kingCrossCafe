@@ -127,7 +127,11 @@
         background-position: center center;
         background-size: cover;
         position: relative;
-        border-radius: 8px; }
+        border-radius: 8px;
+        box-shadow: 5px 5px 20px gray;
+        border: solid 1px rgba(174, 173, 173, 0.77);
+        transition: 300ms all;
+        cursor: pointer; }
         .main-inicio .especialidades .card-container .card .descripcion {
           display: flex;
           flex-direction: column;
@@ -153,6 +157,9 @@
             padding: 10px;
             width: 130px;
             cursor: pointer; }
+        .main-inicio .especialidades .card-container .card:hover {
+          transform: scale(1.1);
+          box-shadow: 5px 5px 20px #2c2c2c; }
       .main-inicio .especialidades .card-container .--coldbrew {
         background-image: url(../assets/imagenes/cold-brew.jpg); }
       .main-inicio .especialidades .card-container .--expresso {
