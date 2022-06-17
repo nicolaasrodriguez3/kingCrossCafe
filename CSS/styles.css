@@ -5,7 +5,7 @@
 .header-incio {
   height: 100vh;
   background-color: aqua;
-  background-image: url(../assets/imagenes/header_inicio.jpg);
+  background-image: url(../assets/imagenes/header_inicio-min.jpg);
   background-position: center -100px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -121,9 +121,9 @@
       align-items: center;
       flex-wrap: wrap; }
       .main-inicio .especialidades .card-container .card {
-        height: 533px;
-        width: 378px;
-        background-image: url(../assets/imagenes/flatwhite.jpg);
+        height: 433px;
+        width: 278px;
+        background-image: url(../assets/imagenes/flatwhite-min.jpg);
         background-position: center center;
         background-size: cover;
         position: relative;
@@ -161,9 +161,9 @@
           transform: scale(1.1);
           box-shadow: 5px 5px 20px #2c2c2c; }
       .main-inicio .especialidades .card-container .--coldbrew {
-        background-image: url(../assets/imagenes/cold-brew.jpg); }
+        background-image: url(../assets/imagenes/cold-brew-min.jpg); }
       .main-inicio .especialidades .card-container .--expresso {
-        background-image: url(../assets/imagenes/expresso_imagen.jpg); }
+        background-image: url(../assets/imagenes/expresso_imagen-min.jpg); }
   .main-inicio .novedades {
     width: 100%;
     height: 631px;
@@ -232,6 +232,9 @@
       margin-bottom: 10px; }
 
 /* Reset */
+html {
+  scroll-behavior: smooth; }
+
 * {
   margin: 0;
   padding: 0;
