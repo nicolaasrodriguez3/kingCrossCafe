@@ -1,0 +1,147 @@
+.header-tienda{
+
+    .navegacion{
+        width: 100%;
+        background-color: $color3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .logo{
+            img{
+                width: 160px;
+                height: 160px;
+            }
+        };
+
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .cart{
+                width: 25px;
+                height: 25px;
+                color: #003049;
+
+              
+            }
+        };
+
+        li{
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            
+        };
+
+        a{
+            text-decoration: none;
+            color: $dark;
+            font-weight: bold;
+        }
+
+
+
+
+    }
+
+    .banner{
+        width: 100%;
+        background-image: url(../assets/imagenes/banner-tienda-min.png);
+        height: 500px;
+    }
+
+}
+.btn-menu{
+    margin-left: 60px;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    
+}
+.main-tienda{
+
+    h1{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        
+    }
+
+    .item-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        
+        .item{
+            
+            height: 333px;
+            width: 220px;
+            background-image: url(../assets/imagenes/mockup-producto.jpg);
+            background-position: center center;
+            background-size: cover;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 5px 5px 20px gray;
+            border: solid 1px rgba(174, 173, 173, 0.77);
+            transition: 300ms all;
+            margin:10px 20px 10px 20px;
+            cursor: pointer;
+
+                .descripcion{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    padding: 10px;
+                    background-color: rgb(253, 240, 213);
+                    border-radius: 0 0 8px 8px;
+
+                    h3{
+                        margin-bottom: 10px;
+                        font-size: 1rem;
+                    }
+
+                    button{
+                        display: inline-block;
+                        border-radius: 4px;
+                        background-color:#529831;
+                        border: none;
+                        color: $light;
+                        text-align: center;
+                        font-size: 0.9rem;
+                        padding: 8px;
+                        width: 130px;
+                        cursor: pointer;
+
+                    }
+
+                    
+                }
+
+                &:hover{
+                    transform: scale(1.05);
+                    box-shadow: 5px 5px 20px rgb(44, 44, 44);
+                }
+
+            
+        }
+    }
+
+}
+
+#tabla{
+    display: none;
+}
+
